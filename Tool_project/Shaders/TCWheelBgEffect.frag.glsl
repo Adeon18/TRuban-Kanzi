@@ -36,7 +36,7 @@ void main()
 	//float coeffEdgeDecreaseY = smoothstep(0.0, 0.5, uvFuckIDK.y);
 	//float coeffEdgeDecrease = coeffEdgeDecreaseX * coeffEdgeDecreaseY;
 	
-    float coeff = (uv.x > kzSlipPercent) ? 0.0: ((uv.x > kzSlipPercent - DEF_RAD) ? BLOOM_FACTOR - smoothstep(kzSlipPercent - DEF_RAD, kzSlipPercent, uv.x): BLOOM_FACTOR);
+    float coeff = min((uv.x > kzSlipPercent) ? 0.0: ((uv.x > kzSlipPercent - DEF_RAD) ? BLOOM_FACTOR - smoothstep(kzSlipPercent - DEF_RAD, kzSlipPercent, uv.x): BLOOM_FACTOR), 0.7);
     
     vec3 dominantColor = (kzSlipPercent < TRACTION_CRITICAL_LIMIT) ? YELLOW: RED;
     dominantColor = (kzSlipPercent < TRACTION_BAD_LIMIT) ? GREEN: YELLOW;
@@ -46,5 +46,5 @@ void main()
     
     vec3 color = (kzSlipPercent < TRACTION_CRITICAL_LIMIT) ? colorOK: colorBAD;
     
-    gl_FragColor = vec4(color * coeff, coeff);
+    gl_FragColor = vec4(color * min(kzSlipPercent, 0.9), min(kzSlipPercent, 0.9));
 }

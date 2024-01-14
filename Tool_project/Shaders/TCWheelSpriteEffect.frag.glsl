@@ -17,7 +17,11 @@ void main()
 	const float TRACTION_CRITICAL_LIMIT = 0.6;
 	const float TRACTION_TOP_LIMIT = 1.0;
 	
+	float ass = kzSlipPercent * kzSlipPercent;
+	
 	vec4 baseColor = texture2D(TextureASS, vTexCoord);
+	
+	baseColor *= vec4(RED, 1.0);
     
-    gl_FragColor = vec4(WHITE * baseColor.a * kzSlipPercent - baseColor.xyz, baseColor.a * kzSlipPercent);
+    gl_FragColor = vec4(baseColor.xyz * kzSlipPercent, baseColor.a * kzSlipPercent);
 }

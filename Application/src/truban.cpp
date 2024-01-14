@@ -36,7 +36,7 @@ public:
 
         for (int i = 0; i < 4; ++i) {
             m_wheelSlipData[i] = 0.0;
-            m_wheelAnimationFrameFreq[i] = 0.0;
+            m_wheelAnimationFrameFreq[i] = 1.0;
             m_wheelAnimationFrameCount[i] = 0.0;
             m_wheelAnimationFrameMaxOpacity[i] = 0.0;
             m_wheelAnimationFrameIncreaseCoeffs[i] = 1.0;
@@ -46,43 +46,41 @@ public:
     void onUpdate(chrono::nanoseconds deltaTime) override {
 
         for (int i = 0; i < 4; ++i) {
+   
             m_wheelAnimationFrameCount[i] += m_wheelAnimationFrameIncreaseCoeffs[i];
-            m_wheelSlipData[i] += 0.001;
-            if (m_wheelSlipData[i] >= 1.0f) {
-                m_wheelSlipData[i] = 0.0;
-            }
+            m_wheelSlipData[i] = (i + 1) * 0.23;
 
             if (m_wheelSlipData[i] > TRACTION_BAD_LIMIT && m_wheelSlipData[i] < TRACTION_CRITICAL_LIMIT) {
                 m_wheelAnimationFrameCount[i] = 60 * static_cast<float>(m_wheelAnimationFrameCount[i]) / m_wheelAnimationFrameFreq[i];
                 m_wheelAnimationFrameFreq[i] = 60;
-                m_wheelAnimationFrameMaxOpacity[i] = 0.6;
+                m_wheelAnimationFrameMaxOpacity[i] = 1.0;
             }
-            else if (m_wheelSlipData[i] > TRACTION_CRITICAL_LIMIT) {
-                m_wheelAnimationFrameCount[i] = 10 * static_cast<float>(m_wheelAnimationFrameCount[i]) / m_wheelAnimationFrameFreq[i];
-                m_wheelAnimationFrameFreq[i] = 10;
+            else if (m_wheelSlipData[i] >= TRACTION_CRITICAL_LIMIT) {
+                m_wheelAnimationFrameCount[i] = 16 * static_cast<float>(m_wheelAnimationFrameCount[i]) / m_wheelAnimationFrameFreq[i];
+                m_wheelAnimationFrameFreq[i] = 16;
                 m_wheelAnimationFrameMaxOpacity[i] = 1.0;
             }
             else {
+                m_wheelAnimationFrameCount[i] = 300 * static_cast<float>(m_wheelAnimationFrameCount[i]) / m_wheelAnimationFrameFreq[i];
                 m_wheelAnimationFrameFreq[i] = 300;
-                m_wheelAnimationFrameMaxOpacity[i] = 0.05;
+                m_wheelAnimationFrameMaxOpacity[i] = 0.2;
             }
 
             m_wheelImgNodes[i]->setProperty(DynamicPropertyType<float>("kzSlipPercent"), std::max(std::min(m_wheelAnimationFrameMaxOpacity[i] *
-                (static_cast<float>(m_wheelAnimationFrameCount[i]) / static_cast<float>(m_wheelAnimationFrameFreq[i])), m_wheelAnimationFrameMaxOpacity[i]), 0.05f));
-            
-            std::cout << std::min(m_wheelAnimationFrameMaxOpacity[i] *
-                (static_cast<float>(m_wheelAnimationFrameCount[i]) / static_cast<float>(m_wheelAnimationFrameFreq[i])), m_wheelAnimationFrameMaxOpacity[i]) << std::endl;
-            
-            if (m_wheelAnimationFrameCount[i] > m_wheelAnimationFrameFreq[i] / 2) {
+                (static_cast<float>(m_wheelAnimationFrameCount[i]) / static_cast<float>(m_wheelAnimationFrameFreq[i]) + 0.2f), m_wheelAnimationFrameMaxOpacity[i]), 0.2f));
+
+            if (m_wheelAnimationFrameCount[i] >= m_wheelAnimationFrameFreq[i] / 2) {
                 m_wheelAnimationFrameIncreaseCoeffs[i] = -1;
+                m_wheelAnimationFrameCount[i] = m_wheelAnimationFrameFreq[i] / 2;
             }
 
-            if (m_wheelAnimationFrameCount[i] < 0) {
+            if (m_wheelAnimationFrameCount[i] <= 0) {
                 m_wheelAnimationFrameIncreaseCoeffs[i] = 1;
+                m_wheelAnimationFrameCount[i] = 0;
             }
         }
-        m_viewportPtr->setProperty(DynamicPropertyType<float>("TRuban.SlipWheelFL"), m_wheelSlipData[0]);
-        m_viewportPtr->setProperty(DynamicPropertyType<float>("TRuban.SlipWheelFR"), m_wheelSlipData[1]);
+        m_viewportPtr->setProperty(DynamicPropertyType<float>("TRuban.SlipWheelFL"), m_wheelSlipData[1]);
+        m_viewportPtr->setProperty(DynamicPropertyType<float>("TRuban.SlipWheelFR"), m_wheelSlipData[0]);
         m_viewportPtr->setProperty(DynamicPropertyType<float>("TRuban.SlipWheelRL"), m_wheelSlipData[2]);
         m_viewportPtr->setProperty(DynamicPropertyType<float>("TRuban.SlipWheelRR"), m_wheelSlipData[3]);
     }
@@ -111,8 +109,8 @@ private:
     std::array<float, 4> m_wheelAnimationFrameMaxOpacity;
     std::array<float, 4> m_wheelAnimationFrameIncreaseCoeffs;
 
-    static constexpr float TRACTION_BAD_LIMIT = 0.2;
-    static constexpr float TRACTION_CRITICAL_LIMIT = 0.6;
+    static constexpr float TRACTION_BAD_LIMIT = 0.3;
+    static constexpr float TRACTION_CRITICAL_LIMIT = 0.9;
 };
 
 Application* createApplication()
