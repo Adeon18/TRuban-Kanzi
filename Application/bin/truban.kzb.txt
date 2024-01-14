@@ -1,0 +1,334 @@
+﻿Files:
+PropertyTypeLibrary/CubemapColor
+PropertyTypeLibrary/Gauges.CubemapColor
+PropertyTypeLibrary/Gauges.Fuel
+PropertyTypeLibrary/Gauges.GaugeState
+PropertyTypeLibrary/Gauges.NormalMapStrength
+PropertyTypeLibrary/Gauges.NormalMapTexture
+PropertyTypeLibrary/Gauges.Progress
+PropertyTypeLibrary/Gauges.RoughnessStrength
+PropertyTypeLibrary/Gauges.RoughnessTexture
+PropertyTypeLibrary/Gauges.RPM
+PropertyTypeLibrary/Gauges.SimpleColor1
+PropertyTypeLibrary/Gauges.SimpleColor2
+PropertyTypeLibrary/Gauges.Speed
+PropertyTypeLibrary/Gauges.Temperature
+PropertyTypeLibrary/Gauges.TextureCube
+PropertyTypeLibrary/kzSlipPercent
+PropertyTypeLibrary/offset
+PropertyTypeLibrary/smoothing
+PropertyTypeLibrary/TextureASS
+PropertyTypeLibrary/TextureCube
+PropertyTypeLibrary/TRuban.SlipWheelFL
+PropertyTypeLibrary/TRuban.SlipWheelFR
+PropertyTypeLibrary/TRuban.SlipWheelRL
+PropertyTypeLibrary/TRuban.SlipWheelRR
+PropertyTypeLibrary/TAG_PROPERTY_TYPE_Transparent
+Animation Clips/Animation Clip
+Animation Clips/RPM_Startup
+Animation Clips/Speed_Startup
+Screens/Screen/RootPage/Viewport 2D/BG
+Screens/Screen/RootPage/Viewport 2D/WheelFL
+Screens/Screen/RootPage/Viewport 2D/WheelFR
+Screens/Screen/RootPage/Viewport 2D/WheelRL
+Screens/Screen/RootPage/Viewport 2D/WheelRR
+Screens/Screen/RootPage/Viewport 2D/TireRL
+Screens/Screen/RootPage/Viewport 2D/TireFR
+Screens/Screen/RootPage/Viewport 2D/TireRR
+Screens/Screen/RootPage/Viewport 2D/TireFL
+Screens/Screen/RootPage/<ResourceDictionaryInNode>
+Screens/Screen/RootPage/Viewport 2D
+Screens/Screen/<ResourceDictionaryInNode>
+Screens/Screen/RootPage
+Screens/Screen
+Material Types/VertexPhong
+Material Types/VertexPhongCube
+Material Types/VertexPhongMorph
+Material Types/VertexPhongSkinned
+Material Types/VertexPhongSkinnedMorph
+Material Types/VertexPhongTextured
+Material Types/VertexPhongTexturedCube
+Material Types/VertexPhongTexturedMorph
+Material Types/VertexPhongTexturedSkinned
+Material Types/VertexPhongTexturedSkinnedMorph
+Material Types/ColorTexture
+Material Types/DefaultBlit
+Material Types/FontDefault
+Material Types/MaskTexture
+Material Types/SweepTextures
+Material Types/Textured
+Material Types/Simple
+Material Types/Progress
+Material Types/Aluminium
+Material Types/TCWheelBgEffect
+Material Types/TCWheelSpriteEffect
+Materials/VertexPhongMaterial
+Materials/VertexPhongCubeMaterial
+Materials/VertexPhongMorphMaterial
+Materials/VertexPhongSkinnedMaterial
+Materials/VertexPhongSkinnedMorphMaterial
+Materials/VertexPhongTexturedMaterial
+Materials/VertexPhongTexturedCubeMaterial
+Materials/VertexPhongTexturedMorphMaterial
+Materials/VertexPhongTexturedSkinnedMaterial
+Materials/VertexPhongTexturedSkinnedMorphMaterial
+Materials/ColorTextureMaterial
+Materials/DefaultBlitMaterial
+Materials/FontDefaultMaterial
+Materials/MaskTextureMaterial
+Materials/SweepTexturesMaterial
+Materials/TexturedMaterial
+Materials/Black Material
+Materials/Base Material
+Materials/Needle Material
+Materials/Progress Traditional Material
+Materials/Aluminium Material
+Materials/Atlas Material
+Materials/TCWheelBgEffectMaterial
+Materials/TCWheelBgEffect_1Material
+Brushes/DefaultBackground
+Brushes/Background
+Brushes/BG
+Brushes/TCWheelBgEffectBrush
+Brushes/TCWheelEffect
+Mesh Data/Mask
+Mesh Data/Base
+Mesh Data/MetalCircle
+Mesh Data/GasMeter
+Mesh Data/TemperatureMeter
+Mesh Data/Progress_Speed
+Mesh Data/Progress_RPM
+Mesh Data/Backface
+Mesh Data/Ticks_RPM
+Mesh Data/Ticks_Speed
+Mesh Data/Needle
+Trajectories/Speed Numbers Arc Trajectory/<GeneratedSpline>
+Trajectories/RPM Numbers Arc Trajectory/<GeneratedSpline>
+Trajectories/Speed Numbers Arc Trajectory
+Trajectories/RPM Numbers Arc Trajectory
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/0
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/20
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/40
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/60
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/80
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/100
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/120
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/140
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/160
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/180
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/200
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/220
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/240
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers/260
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Needle/Point Light
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Backface
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Ticks_Speed
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Progress_Speed
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/MetalCircle
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Base
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Numbers
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/Needle
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/SpeedValue
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed/SpeedUnit
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/8
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/7
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/6
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/5
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/4
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/3
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/2
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/1
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers/0
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Needle/Point Light
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Backface
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Ticks_RPM
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Progress_RPM
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/MetalCircle
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Base
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Numbers
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/Needle
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/RPMValue
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM/RPMUnit
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Fuel/FuelMeter
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Fuel/F
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Fuel/E
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Temperature/H
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Temperature/C
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Temperature/TemperatureMeter
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Camera
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Mask
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Speed
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/RPM
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Directional Light
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Fuel
+Prefabs/Traditional Gauges/Traditional Gauges/Scene/Temperature
+Prefabs/Traditional Gauges/Traditional Gauges/Scene
+Prefabs/Traditional Gauges/Traditional Gauges
+Prefabs/Traditional Gauges
+2D Effects/Outline Effect 2D
+Animation Data/Gauges.RPM
+Animation Data/Gauges.Speed
+Page Transitions/Default Transitions
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_128x128.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_64x64.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_32x32.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_16x16.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_8x8.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_4x4.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_2x2.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posX_1x1.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_128x128.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_64x64.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_32x32.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_16x16.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_8x8.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_4x4.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_2x2.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negX_1x1.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_128x128.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_64x64.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_32x32.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_16x16.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_8x8.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_4x4.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_2x2.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posY_1x1.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_128x128.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_64x64.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_32x32.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_16x16.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_8x8.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_4x4.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_2x2.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negY_1x1.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_128x128.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_64x64.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_32x32.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_16x16.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_8x8.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_4x4.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_2x2.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds posZ_1x1.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_128x128.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_64x64.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_32x32.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_16x16.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_8x8.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_4x4.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_2x2.png
+Resource Files/Images/cubemaps/mipmaps/DefaultCubeMap.dds negZ_1x1.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_512x512.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_256x256.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_128x128.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_64x64.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_32x32.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_16x16.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_8x8.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_4x4.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_2x2.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posX_1x1.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_512x512.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_256x256.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_128x128.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_64x64.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_32x32.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_16x16.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_8x8.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_4x4.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_2x2.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negX_1x1.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_512x512.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_256x256.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_128x128.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_64x64.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_32x32.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_16x16.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_8x8.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_4x4.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_2x2.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posY_1x1.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_512x512.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_256x256.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_128x128.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_64x64.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_32x32.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_16x16.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_8x8.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_4x4.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_2x2.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negY_1x1.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_512x512.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_256x256.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_128x128.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_64x64.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_32x32.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_16x16.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_8x8.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_4x4.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_2x2.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds posZ_1x1.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_512x512.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_256x256.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_128x128.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_64x64.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_32x32.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_16x16.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_8x8.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_4x4.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_2x2.png
+Resource Files/Images/cubemaps/mipmaps/studio2_radiance.dds negZ_1x1.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds posX.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds negX.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds posY.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds negY.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds posZ.png
+Resource Files/Images/cubemaps/DefaultCubeMap.dds negZ.png
+Resource Files/Images/cubemaps/studio2_radiance.dds posX.png
+Resource Files/Images/cubemaps/studio2_radiance.dds negX.png
+Resource Files/Images/cubemaps/studio2_radiance.dds posY.png
+Resource Files/Images/cubemaps/studio2_radiance.dds negY.png
+Resource Files/Images/cubemaps/studio2_radiance.dds posZ.png
+Resource Files/Images/cubemaps/studio2_radiance.dds negZ.png
+Resource Files/Images/mipmaps/DefaultTextureImage_512x512.png
+Resource Files/Images/mipmaps/DefaultTextureImage_256x256.png
+Resource Files/Images/mipmaps/DefaultTextureImage_128x128.png
+Resource Files/Images/mipmaps/DefaultTextureImage_64x64.png
+Resource Files/Images/mipmaps/DefaultTextureImage_32x32.png
+Resource Files/Images/mipmaps/DefaultTextureImage_16x16.png
+Resource Files/Images/mipmaps/DefaultTextureImage_8x8.png
+Resource Files/Images/mipmaps/DefaultTextureImage_4x4.png
+Resource Files/Images/mipmaps/DefaultTextureImage_2x2.png
+Resource Files/Images/mipmaps/DefaultTextureImage_1x1.png
+Resource Files/Images/DefaultBackground.png
+Resource Files/Images/DefaultTextureImage.png
+Resource Files/Images/Atlas.png
+Resource Files/Images/BG.png
+Resource Files/Images/White.png
+Resource Files/Images/studio2_radiance.dds
+Resource Files/Images/Aluminium_DISP.png
+Resource Files/Images/Aluminium_NRM.png
+Resource Files/Images/tire.png
+Resource Files/Fonts/Roboto-Thin.ttf
+Resource Files/Fonts/Roboto-Light.ttf
+Resource Files/Fonts/Roboto-Medium.ttf
+Resource Files/Fonts/Roboto-Bold.ttf
+Resource Files/Fonts/Roboto-Black.ttf
+Textures/DefaultBackground
+Textures/Default Texture
+Textures/Default Cube Map Texture
+Textures/Atlas
+Textures/BG
+Textures/White
+Textures/Aluminium_DISP
+Textures/Aluminium_NRM
+Textures/studio_radiance
+Textures/tire
+Styles/Text Block 2D Style
+State Managers/Numbers State Manager
+State Managers/Ticks_Speed State Manager
+State Managers/Numbers State Manager_1
+State Managers/Ticks_RPM State Manager
+State Managers/Speed State Manager
+State Managers/RPM State Manager
+Font Families/Roboto
+/truban
